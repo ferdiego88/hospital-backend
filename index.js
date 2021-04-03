@@ -17,6 +17,9 @@ app.use(express.json());
 // Base de Datos
 dbConnection();
 
+// Directorio Publico
+app.use(express.static('public'));
+
 // console.log(process.env);
 // Usuario Mongo: mean_user
 // password Mongo: yPO7b5u7TEmJwVvn
